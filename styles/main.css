@@ -1,7 +1,9 @@
  /* Custom Fonts  */
 
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
- /* Utilities CSS */
+ /* -------------------------------
+    Utilities CSS
+    --------------------------------- */
 
  body {
      font-family: 'Poppins', sans-serif;
@@ -19,14 +21,30 @@
      padding: 30px;
  }
 
+ hr {
+     background-color: #D1D1D1;
+     height: 1px;
+     border: none;
+ }
+
  .section-title {
      font-size: 24px;
      color: #562EFF;
+     margin-top: 3px;
+ }
+
+ /* --------------------------------
+    Top Leaderboard CSS
+    ------------------------------- */
+
+ .top-leaderboard {
+     margin-bottom: 30px;
  }
 
  .students {
      display: grid;
      grid-template-columns: repeat(3, 1fr);
+     grid-row-gap: 30px;
  }
 
  .student {
@@ -41,4 +59,36 @@
 
  .student-name {
      margin-left: 16px;
+     font-size: 18px;
+ }
+
+ /* ----------------------------
+  Trending Articles 
+  --------------------------------------- */
+
+ .blog {
+     display: flex;
+ }
+
+ .blog .thumbnail img {
+     width: 177px;
+     height: 117px;
+ }
+
+ .blog-info {
+     margin-left: 16px;
+ }
+
+ .blog .blog-title {
+     font-size: 20px;
+ }
+
+ .blog .blog-author {
+     color: #9F9F9F;
+     font-weight: normal;
+ }
+
+ .blog-author a {
+     text-decoration: none;
+     color: #562EFF;
  }
